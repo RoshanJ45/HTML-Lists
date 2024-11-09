@@ -1,0 +1,34 @@
+body {
+font-family: Arial, sans-serif;
+background-color: #f0f0f0;
+display: flex;
+justify-content: center;
+align-items: center;
+height: 100vh;
+}
+.styled-list {
+list-style-type: none;
+padding: 0;
+width: 250px;
+background-color: #fff;
+border-radius: 8px;
+box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+.styled-list li {
+padding: 15px 20px;
+border-bottom: 1px solid #ddd;
+display: flex;
+align-items: center;
+}
+.styled-list li:last-child {
+border-bottom: none;
+}
+.styled-list li::before {
+content: '✔';
+margin-right: 10px;
+color: #4CAF50;
+font-size: 1.2em;
+}
+.styled-list li:hover {
+background-color: #f9f9f9;
+}
